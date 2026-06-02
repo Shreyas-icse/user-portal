@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EmailJS Quick Send</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("otF03no6OBCWcGd9F"); // Replace with your EmailJS Public Key
+    })();
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    button {
+      padding: 12px 24px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #218838;
+    }
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <button onclick="sendEmail()">Send Service Request</button>
+    <div id="status"></div>
+  </div>
+
+  <script>
+    function sendEmail() {
+      // Replace with your Service ID, Template ID
+      emailjs.send("service_e0ps55a", "template_hdpflyn", {
+        // Pass the dynamic values defined in your template, if any
+        to_name: "Shreyas",
+        message: "You have a new service request!",
+        reply_to: "shreyasshreyas925@gmail.com"
+      })
+      .then(function(response) {
+        document.getElementById("status").textContent = "Email sent successfully!";
+        document.getElementById("status").style.color = "green";
+      }, function(error) {
+        console.error("FAILED...", error);
+        document.getElementById("status").textContent = "Failed to send email.";
+        document.getElementById("status").style.color = "red";
+      });
+    }
+  </script>
+
+</body>
+</html>
