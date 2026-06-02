@@ -1,0 +1,91 @@
+/* Profile.css */
+
+.profile-container {
+  background-color: #111;
+  color: #f5f5f5;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007BFF;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 auto 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #222;
+  color: #fff;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007BFF;
+  background-color: #1a1a1a;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
