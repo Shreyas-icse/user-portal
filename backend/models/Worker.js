@@ -44,7 +44,30 @@ const workerSchema = new mongoose.Schema({
     type: Number,
     required: true,
     min: 0,
+<<<<<<< HEAD
   }
+=======
+  },
+  locationLat: {
+    type: Number,
+    default: null,
+  },
+  locationLng: {
+    type: Number,
+    default: null,
+  },
+  locationAccuracy: {
+    type: Number,
+    default: null,
+  },
+  locationUpdatedAt: {
+    type: Date,
+  },
+  location: {
+    type: String, // manual address entered by worker
+    default: '',
+  },
+>>>>>>> 896a967d74f81ed8a2dfbf844faf595fe2a4cc7a
 }, {
   timestamps: true
 });

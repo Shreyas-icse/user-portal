@@ -20,6 +20,10 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.0",
     "multer": "^2.0.0",
+<<<<<<< HEAD
+=======
+    "node-fetch": "^2.7.0",
+>>>>>>> 896a967d74f81ed8a2dfbf844faf595fe2a4cc7a
     "nodemon": "^3.1.10",
     "socket.io": "^4.8.1"
   }

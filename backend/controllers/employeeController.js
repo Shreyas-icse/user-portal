@@ -5,7 +5,11 @@ const jwt = require("jsonwebtoken");
 // Signup with photo upload
 const signup = async (req, res) => {
   try {
+<<<<<<< HEAD
     const { name, email, password, phone, city } = req.body;//
+=======
+    const { name, email, password, phone, city } = req.body;
+>>>>>>> 896a967d74f81ed8a2dfbf844faf595fe2a4cc7a
 
     const existing = await Employee.findOne({ email });
     if (existing) {
